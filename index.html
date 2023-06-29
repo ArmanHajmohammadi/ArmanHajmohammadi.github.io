@@ -12,29 +12,54 @@
 </head>
 
 <body class="main-content">
-    <header class="section sec1 header active">
-
+    <header class="section sec1 header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="https://s28.picofile.com/file/8465236200/Me_min.png"
+                        alt="a picture of Arman Hajmohammadi">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Arman Hajmohammadi.</span>
+                    A Web Developer.
+                </h1>
+                <p>I began programming by making games using C# in Unity Engine at 12. A few years later, to find the
+                    field I'm the most interested in, I tried different areas such as Computer Hardware (CompTIA A plus
+                    course), Computer Networks (CompTIA Network plus, and a few lessons in Persian), Android development
+                    (using the Dart language and the Flutter framework using Android Studio and B4a), the Windows form
+                    applications development (using Visual Studio, Microsoft SQL Server and C#) and finally learning
+                    other programming languages like Python. Meanwhile, I learned Data structures, algorithms, and C++
+                    for participating in the student Computer Olympiads. Finally, at the end of the day tried FrontEnd
+                    web development and liked that the most. So I chose this field to continue the journey!</p>
+                <a href="https://1drv.ms/b/s!AmZE53Ip_Gd4gVtQSGdoK-yi0Cmq?e=1pz6yT" class="main-btn" target="_blank">
+                    <span class="btn-text">Download CV</span>
+                    <span><i class="fa-solid fa-file-arrow-down"></i></span>
+                </a>
+            </div>
+        </div>
     </header>
     <main>
-        <section class="section sec2 about"></section>
-        <section class="section sec3 Portfolio"></section>
-        <section class="section sec4 blogs"></section>
-        <section class="section sec5 contact"></section>
+        <section class="section sec2 about" id="about"></section>
+        <section class="section sec3 Portfolio" id="contact"></section>
     </main>
 
     <div class="controls">
-        <div class="control control-1 active-btn">
+        <div class="control control-1 active-btn" data-id="home">
             <i class="fa-solid fa-house"></i>
         </div>
-        <div class="control control-2">
+        <div class="control control-2" data-id="about">
             <i class="fa-solid fa-user"></i>
         </div>
-        <div class="control control-2">
-            <i class="fa-solid fa-messages"></i>
+        <div class="control control-2" data-id="contact">
+            <i class="fa-solid fa-phone"></i>
         </div>
 
     </div>
 
+    <script src="./app.js"></script>
 </body>
 
 </html>
