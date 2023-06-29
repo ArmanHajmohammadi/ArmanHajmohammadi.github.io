@@ -202,21 +202,87 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 3.5rem;
-    padding-bottom: 5rem;
+    grid-gap: 3rem;
 
-    .right-about {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
-
+    .cart {
         .about-item {
+            padding-bottom: 2rem;
+            padding-top: 2rem;
             border: 1px solid var(--color-grey-5);
             border-radius: 5px;
             transition: all 0.4s ease-in-out;
             box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h4 {
+                text-align: center;
+                font-size: 3rem;
+                font-weight: 700;
+                color: var(---color-secondary);
+            }
 
             &:hover {
-                cursor: pointer;
+                cursor: default;
+                transform: translateY(-5px);
+                border: 1px solid var(---color-secondary);
+                box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
+            }
+
+            .item {
+                padding: 1.5rem 2rem;
+                display: flex;
+                flex-direction: row;
+
+                .logo {
+                    width: 4.5rem;
+                    height: 4.5rem;
+                    border-radius: 50%;
+                }
+
+                .programming-logo {
+                    width: 4.5rem;
+                    height: 4.5rem;
+                }
+
+                .large-text {
+                    justify-content: center;
+                    padding-left: 1rem;
+                    position: relative;
+                    font-size: 2rem;
+                    color: var(--color-grey-1);
+                    letter-spacing: 2px;
+                    text-justify: inter-word;
+                }
+
+                .small-text {
+                    padding-left: 2rem;
+                    position: relative;
+                    font-size: 1.2rem;
+                    color: var(--color-grey-1);
+                    letter-spacing: 2px;
+                    text-justify: inter-word;
+                }
+
+                .date-text {
+                    padding-left: 2rem;
+                    position: relative;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    color: var(--color-grey-3);
+                    letter-spacing: 3px;
+                    text-justify: inter-word;
+                }
+            }
+
+            hr {
+                width: 75%;
+                position: relative;
+                margin-left: 3rem;
+                height: 1px;
+                border: none;
+                background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, var(--color-grey-2)));
             }
         }
     }
