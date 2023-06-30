@@ -333,11 +333,6 @@ section {
   border-radius: 50%;
 }
 
-.about-container .card .about-item .item .programming-logo {
-  width: 4.5rem;
-  height: 4.5rem;
-}
-
 .about-container .card .about-item .item .large-text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -370,28 +365,19 @@ section {
   letter-spacing: 3px;
 }
 
-.about-container .card .about-item hr {
-  width: 75%;
-  position: relative;
-  margin-left: 3rem;
-  height: 1px;
-  border: none;
-  background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, var(--color-grey-2)));
-}
-
 .about-stats {
   padding-bottom: 4rem;
 }
 
-.about-stats .progress-bars {
+.about-stats .stats-con {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 3rem;
 }
 
-.about-stats .progress-bars .progress-bar {
+.about-stats .stats-con .progress-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,14 +385,15 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 1rem;
 }
 
-.about-stats .progress-bars .progress-bar .prog-title {
+.about-stats .stats-con .progress-bar .prog-title {
   text-transform: uppercase;
   font-weight: 500;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con {
+.about-stats .stats-con .progress-bar .progress-con {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,11 +402,11 @@ section {
           align-items: center;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .prog-text {
+.about-stats .stats-con .progress-bar .progress-con .prog-text {
   color: var(--color-grey-2);
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress {
+.about-stats .stats-con .progress-bar .progress-con .progress {
   width: 100%;
   height: 0.45rem;
   background-color: var(--color-grey-4);
@@ -427,7 +414,18 @@ section {
   position: relative;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress span {
+.about-stats .stats-con .progress-bar .progress-con .progress .p40 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(---color-secondary);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 40%;
+}
+
+.about-stats .stats-con .progress-bar .progress-con .progress .p50 {
   position: absolute;
   top: 0;
   left: 0;
@@ -436,6 +434,58 @@ section {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   width: 50%;
+}
+
+.about-stats .stats-con .progress-bar .progress-con .progress .p60 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(---color-secondary);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 60%;
+}
+
+.about-stats .stats-con .progress-bar .progress-con .progress .p70 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(---color-secondary);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 70%;
+}
+
+.about-stats .stats-con .progress-bar .progress-con .progress .p80 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(---color-secondary);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 80%;
+}
+
+.stats-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+}
+
+.stats-title::before {
+  content: "";
+  left: 50%;
+  top: 0%;
+  width: 40%;
+  height: 1px;
+  background-color: var(--color-grey-5);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .btn-con {
@@ -532,5 +582,14 @@ section {
           transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 6.3rem;
+}
+
+hr {
+  width: 75%;
+  position: relative;
+  margin-left: 3rem;
+  height: 1px;
+  border: none;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, var(---color-secondary)));
 }
 /*# sourceMappingURL=styles.css.map */
