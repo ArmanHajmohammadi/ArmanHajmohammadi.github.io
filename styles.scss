@@ -204,7 +204,7 @@ section {
     padding-top: 3.5rem;
     grid-gap: 3rem;
 
-    .cart {
+    .card {
         .about-item {
             padding-bottom: 2rem;
             padding-top: 2rem;
@@ -284,6 +284,21 @@ section {
                 border: none;
                 background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, var(--color-grey-2)));
             }
+        }
+    }
+
+    .left-about {
+        padding-right: 5rem;
+
+        p {
+            line-height: 2rem;
+            padding: 1rem;
+            color: var(--color-grey-1);
+        }
+
+        h4 {
+            font-size: 2rem;
+            text-transform: uppercase;
         }
     }
 }
