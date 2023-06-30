@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@
 
 :root {
   --color-primary: #191d2b;
-  ---color-secondary: #27AE60;
+  ---color-secondary: #eb204f;
   --color-white: white;
   --color-black: black;
   --color-grey0: #f8f8f8;
@@ -25,7 +25,7 @@
 
 body {
   background-color: var(--color-primary);
-  font-family: "Google Sans", 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 1.1rem;
   color: var(--color-white);
   -webkit-transition: all .4s ease-in-out;
@@ -261,7 +261,25 @@ section {
   grid-gap: 3rem;
 }
 
-.about-container .cart .about-item {
+.about-container .introduction {
+  padding-right: 5rem;
+}
+
+.about-container .introduction p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 1rem;
+  text-align: justify;
+  text-justify: auto;
+  color: var(--color-grey-1);
+}
+
+.about-container .introduction h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.about-container .card .about-item {
   padding-bottom: 2rem;
   padding-top: 2rem;
   border: 1px solid var(--color-grey-5);
@@ -282,14 +300,14 @@ section {
           justify-content: center;
 }
 
-.about-container .cart .about-item h4 {
+.about-container .card .about-item h4 {
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
   color: var(---color-secondary);
 }
 
-.about-container .cart .about-item:hover {
+.about-container .card .about-item:hover {
   cursor: default;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -298,7 +316,7 @@ section {
           box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
 }
 
-.about-container .cart .about-item .item {
+.about-container .card .about-item .item {
   padding: 1.5rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,18 +327,18 @@ section {
           flex-direction: row;
 }
 
-.about-container .cart .about-item .item .logo {
+.about-container .card .about-item .item .logo {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
 }
 
-.about-container .cart .about-item .item .programming-logo {
+.about-container .card .about-item .item .programming-logo {
   width: 4.5rem;
   height: 4.5rem;
 }
 
-.about-container .cart .about-item .item .large-text {
+.about-container .card .about-item .item .large-text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -329,29 +347,30 @@ section {
   font-size: 2rem;
   color: var(--color-grey-1);
   letter-spacing: 2px;
-  text-justify: inter-word;
+  text-align: justify;
+  text-justify: auto;
 }
 
-.about-container .cart .about-item .item .small-text {
+.about-container .card .about-item .item .small-text {
   padding-left: 2rem;
   position: relative;
   font-size: 1.2rem;
   color: var(--color-grey-1);
   letter-spacing: 2px;
-  text-justify: inter-word;
+  text-align: justify;
+  text-justify: auto;
 }
 
-.about-container .cart .about-item .item .date-text {
+.about-container .card .about-item .item .date-text {
   padding-left: 2rem;
   position: relative;
   text-transform: uppercase;
   font-size: 1rem;
   color: var(--color-grey-3);
   letter-spacing: 3px;
-  text-justify: inter-word;
 }
 
-.about-container .cart .about-item hr {
+.about-container .card .about-item hr {
   width: 75%;
   position: relative;
   margin-left: 3rem;

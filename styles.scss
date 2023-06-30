@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 * {
     margin: 0;
@@ -9,7 +9,7 @@
 
 :root {
     --color-primary: #191d2b;
-    ---color-secondary: #27AE60;
+    ---color-secondary: #eb204f;
     --color-white: white;
     --color-black: black;
     --color-grey0: #f8f8f8;
@@ -25,7 +25,7 @@
 
 body {
     background-color: var(--color-primary);
-    font-family: "Google Sans", 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 1.1rem;
     color: var(--color-white);
     transition: all .4s ease-in-out;
@@ -204,6 +204,24 @@ section {
     padding-top: 3.5rem;
     grid-gap: 3rem;
 
+    .introduction {
+        padding-right: 5rem;
+
+        p {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            padding: 1rem;
+            text-align: justify;
+            text-justify: auto;
+            color: var(--color-grey-1);
+        }
+
+        h4 {
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+    }
+
     .card {
         .about-item {
             padding-bottom: 2rem;
@@ -253,7 +271,8 @@ section {
                     font-size: 2rem;
                     color: var(--color-grey-1);
                     letter-spacing: 2px;
-                    text-justify: inter-word;
+                    text-align: justify;
+                    text-justify: auto;
                 }
 
                 .small-text {
@@ -262,7 +281,8 @@ section {
                     font-size: 1.2rem;
                     color: var(--color-grey-1);
                     letter-spacing: 2px;
-                    text-justify: inter-word;
+                    text-align: justify;
+                    text-justify: auto;
                 }
 
                 .date-text {
@@ -272,7 +292,6 @@ section {
                     font-size: 1rem;
                     color: var(--color-grey-3);
                     letter-spacing: 3px;
-                    text-justify: inter-word;
                 }
             }
 
@@ -284,21 +303,6 @@ section {
                 border: none;
                 background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, var(--color-grey-2)));
             }
-        }
-    }
-
-    .left-about {
-        padding-right: 5rem;
-
-        p {
-            line-height: 2rem;
-            padding: 1rem;
-            color: var(--color-grey-1);
-        }
-
-        h4 {
-            font-size: 2rem;
-            text-transform: uppercase;
         }
     }
 }
