@@ -39,7 +39,7 @@ a {
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     color: var(--color-white);
     overflow: hidden;
 }
@@ -135,7 +135,7 @@ section {
 .header-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 100%;
+    min-height: 100vh;
 
     .left-header {
         display: flex;
@@ -183,7 +183,7 @@ section {
         padding-right: 18rem;
 
         .name {
-            font-size: 2rem;
+            font-size: 2.2rem;
 
             span {
                 color: var(---color-secondary);
@@ -468,9 +468,6 @@ section {
     }
 }
 
-
-
-
 // independant components:
 .btn-con {
     display: flex;
@@ -558,3 +555,6 @@ hr {
     border: none;
     background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, var(---color-secondary)));
 }
+
+
+@import './media'
