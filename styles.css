@@ -51,7 +51,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 14rem;
+  padding: 3rem 18rem;
 }
 
 .section {
@@ -531,7 +531,7 @@ section {
 }
 
 .contact-me .card .about-item:hover {
-  cursor: pointer;
+  cursor: default;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   border: 1px solid var(---color-secondary);
